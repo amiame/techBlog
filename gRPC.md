@@ -26,9 +26,17 @@ Bagaimana gRPC mengubah data microservice ke dalam bentuk byte?
 gRPC dilengkapi sebuat compiler bernama protoc yang bertanggungjawab mengubah data dalam microservice ke dalam bentuk byte dan sebaliknya.
 Mungkin sedikit sukar untuk dijelaskan dalam beberapa ayat, tapi saya cuba juga.
 Begini, gRPC memanfaatkan apa yang dipanggil format Protocol buffer, di mana sesebuah unit data diisytiharkan dalam bentuk service dan message. Pengisytiharan ini dibuat dalam sebuah fail teks yang berakhir dengan nama .proto. Fail ini diletakkan di dalam projek microservice. Kemudian, menggunakan protoc, kita akan hasilkan fail dalam bahasa yang sama dengan microservice kita, yang membolehkan kita memanipulasi data tersebut di dalam projek kita. Ok, selesai sudah bahagian menghubungkaitkan data gRPC dengan data dalam microservice.
+
 Untuk bahagian penghantaran/penerimaan data dari sebuah microservice yang mengimplementasi gRPC kepada sebuah microservice lain yang juga mengimplementasi gRPC, ia dijalankan sama seperti client dan server dalam kes REST API. (Tidaklah 100% sama, kerana gRPC juga membolehkan pemulaan penghantaran dua hala, manakala REST API hanya membolehkan pemulaaan penghantaran data dibuat oleh client sahaja).
 Oleh kerana data yang dihantar melalui gRPC ini berbentuk byte, ia boleh dimampatkan supaya data penghantaran lebih ringan dan cepat. Sebut pasal kecepatan penghantaran, gRPC dikendali di bawah protokol HTTP2. Berbanding HTTP1.1 yang digunakan untuk REST API, HTTP2 menyebabkan data dihantar dalam bentuk binari, dan bukan teks. Ini malah menyumbang kepada kelajuan gRPC lagi.
 
 ## Rumusan
 
 Ada banyak perkara yang saya belum sentuh mengenai gRPC dalam entri ini. Mungkin dalam kupasan berikut, saya akan terangkan lebih lanjut, misalnya tentang bagaimana implementasi gRPC berbanding REST API.
+
+## Rujukan
+
+- https://grpc.io/about/
+- https://developers.google.com/protocol-buffers/docs/overview
+- https://blog.dreamfactory.com/grpc-vs-rest-how-does-grpc-compare-with-traditional-rest-apis/
+- https://grpc.io/blog/wireshark/
