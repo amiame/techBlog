@@ -11,11 +11,12 @@ Selama ni aku hanya pernah guna REST API untuk menghubungkan
 microservice dengan microserice, atau
 microservice dengan frontend.
 Rupanya, gRPC ini dianggap sebagai cara perhubungan baru yang sedikit demi sedikit akan menggantikan REST API.
-Jap, hang belum cerita lagi apa mende gRPC ni
+
+# Jap, hang belum cerita lagi apa mende gRPC ni
 
 gRPC ni singkatan untuk Google Remote Procedure Call.
 Daripada namanya kita tahu, ia adalah versi Google untuk Remote Procedure Call. RPC ni rupanya sebuah framework yang dah lama dicipta, malah sebelum REST API lagi, iaitu pada tahun 1970an. REST API dicipta pada 1997. gRPC pula pada 2015.
-RPC dianggap sudah tak digunapakai pada masa sekarang. gRPC dikatakan lebih pantas daripada REST API. Namun, gRPC belum digunapakai secara meluas kerana ia mengambil lebih banyak masa untuk diimplementasi ke dalam kod. Menurut penulis blog ini , beliau cuma perlukan 10 minit untuk mengimplementasi REST API ke dalam kodnya, berbanding 45 minit untuk gRPC.
+RPC dianggap sudah tak digunapakai pada masa sekarang. gRPC dikatakan lebih pantas daripada REST API. Namun, gRPC belum digunapakai secara meluas kerana ia mengambil lebih banyak masa untuk diimplementasi ke dalam kod. Menurut penulis [blog ini](https://blog.dreamfactory.com/grpc-vs-rest-how-does-grpc-compare-with-traditional-rest-apis/) , beliau cuma perlukan 10 minit untuk mengimplementasi REST API ke dalam kodnya, berbanding 45 minit untuk gRPC.
 
 ## Apa yang membuat gRPC lebih baik?
 
